@@ -13,7 +13,7 @@ MD5sum: aa29d44b83936b18c7052c4ffe0be0ca
 SHA1:  8626d9fc15438cb562a9e8174ee2f3a10d927b48
 SHA256: 31a7adfe3abf2e1abaa8ec4f91869388eea1df7a2d6af05a364a39fff8807186
 Icon: file:///Library/Themes/Arizon.theme/Bundles/icon.png
-Depiction: ./depic/Arizon/index.html
+Depiction: https://hajime4th.github.io/depic/Arizon/index.html
 
 Package: com.hajime.royal
 Name: Royal
