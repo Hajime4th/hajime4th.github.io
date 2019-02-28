@@ -8,7 +8,7 @@ a,button {
 }
 
 html {
-  background:#efeff4
+  background:#1c1c1c
 }
 
 html .depiction {
@@ -81,8 +81,8 @@ body>header {
   width:100%;
   height:44px;
   z-index:10;
-  background:#f7f7f7;
-  border-bottom:1px solid #c9c9cd
+  background:#1c1c1c;
+  color: white;
 }
 
 body>header h1 {
@@ -105,14 +105,15 @@ ul {
   margin:5px 0 35px;
   padding:0;
   list-style:none;
-  background:#fff
+  background:#fff;
+  border-radius: 4px;
 }
 
 ul:after,ul:before {
   content:"";
   display:block;
   height:1px;
-  background:#c8c7cc
+  background:#c8c7cc;
 }
 
 @media (min-width:708px) {
@@ -211,14 +212,18 @@ header .date {
 
 footer :first-child {
   margin-top:0
+  color: white;
 }
 
 footer :last-child {
-  margin-bottom:0
+  margin-bottom:0;
+  color: white;
 }
 
 .nav a,footer a {
   margin-right:15px
+  color: white;
+
 }
 
 #about {
@@ -238,4 +243,16 @@ footer :last-child {
   margin-left:0;
   margin-right:0
 }
+}
+
+#in-this-version {
+  color: white;
+}
+
+#known-issues {
+  color: white;
+}
+
+#screenshots {
+  color:white;
 }

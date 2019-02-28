@@ -2,13 +2,28 @@ iframe {
   border:0
 }
 
+li {
+  background: transparent;
+}
+
 a,button {
   color:#007aff;
-  text-decoration:none
+  text-decoration:none;
+  background: transparent;
+  user-select: none;
+
 }
 
 html {
-  background:#efeff4
+  background-image: url("../img/background-image.jpg");
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  background-size: cover;
 }
 
 html .depiction {
