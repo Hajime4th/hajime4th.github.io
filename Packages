@@ -9,11 +9,11 @@ Section: Themes
 Depends: com.anemonetheming.anemone
 Filename: debs/com.hajime.arizon_1.0_iphoneos-arm.deb
 Size: 35216
-MD5sum: 5045a2ad2f598b413edacb8fc10fee52
-SHA1:  aac7c91d9e0df2c1cab532b4425174f31374a2f3
-SHA256: fd9ab5b89417606077fd6898b8a910995931122fee2a96decb441125e1b38b92
+MD5sum: aa29d44b83936b18c7052c4ffe0be0ca
+SHA1:  8626d9fc15438cb562a9e8174ee2f3a10d927b48
+SHA256: 31a7adfe3abf2e1abaa8ec4f91869388eea1df7a2d6af05a364a39fff8807186
 Icon: file:///Library/Themes/Arizon.theme/Bundles/icon.png
-Depiction: https://hajime4th.github.io/depic/Arizon/index.html
+Depiction: ./depic/Arizon/index.html
 
 Package: com.hajime.royal
 Name: Royal
