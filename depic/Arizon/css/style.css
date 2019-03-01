@@ -266,6 +266,9 @@ footer :last-child {
   border-radius: 12px;
   height: 450px;
   border: none;
+  outline: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
 }
 
 #about {
@@ -283,4 +286,10 @@ footer :last-child {
 #compatibility ul,li,h2{
   color:black;
   text-align: center;
+  border-top: 0;
+  border-bottom:0;
+  outline: none;
+  outline: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
 }
