@@ -8,10 +8,10 @@ Author: Hajime <hajime4th@gmail.com>
 Section: Themes
 Depends: com.anemonetheming.anemone
 Filename: debs/com.hajime.arizon_1.0_iphoneos-arm.deb
-Size: 35216
-MD5sum: aa29d44b83936b18c7052c4ffe0be0ca
-SHA1:  8626d9fc15438cb562a9e8174ee2f3a10d927b48
-SHA256: 31a7adfe3abf2e1abaa8ec4f91869388eea1df7a2d6af05a364a39fff8807186
+Size: 34316
+MD5sum: 516687183212b71897c57917f98c1c3c
+SHA1:  6eea34e5b51a4897e4f3572bdef4a4d00d86f152
+SHA256: 323309efb81767147d3924b4d333b1d3e766175655bb6913c00bed59d6204baa
 Icon: file:///Library/Themes/Arizon.theme/Bundles/icon.png
 Depiction: https://hajime4th.github.io/depic/Arizon/index.html
 

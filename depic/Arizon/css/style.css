@@ -8,7 +8,7 @@ a,button {
 }
 
 html {
-  background:#1c1c1c
+  background: white;
 }
 
 html .depiction {
@@ -16,7 +16,7 @@ html .depiction {
 }
 
 body {
-  font:16px -apple-system-font,".Helvetica NeueUI","Helvetica Neue",sans-serif;
+  font:18px -apple-system-font,".Helvetica NeueUI","Helvetica Neue",sans-serif;
   margin:80px 0 35px
 }
 
@@ -44,7 +44,7 @@ body {
 
 body>p,h2,header .date,p[class="footer"] {
   margin:15px;
-  color:#6d6d72;
+  color: black;
   font-size:14px;
   font-weight:400
 }
@@ -81,16 +81,16 @@ body>header {
   width:100%;
   height:44px;
   z-index:10;
-  background:#1c1c1c;
-  color: white;
+  background: white;
+  color: black;
 }
 
 body>header h1 {
   margin:0;
   text-align:center;
-  font-size:18px;
+  font-size:25px;
   line-height:44px;
-  font-weight:500
+  font-weight: 400;
 }
 
 .cydia body>header {
@@ -246,13 +246,41 @@ footer :last-child {
 }
 
 #in-this-version {
-  color: white;
+  color: black;
+  font-size: 20px;
 }
 
 #known-issues {
-  color: white;
+  color: black;
+  font-size: 20px;
 }
 
 #screenshots {
-  color:white;
+  color:black;
+  font-size: 20px;
+}
+
+
+#screenshots li,img{
+  color:black;
+  border-radius: 12px;
+  height: 450px;
+  border: none;
+}
+
+#about {
+  color:black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#compatibility {
+  color:black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#compatibility ul,li,h2{
+  color:black;
+  text-align: center;
 }
