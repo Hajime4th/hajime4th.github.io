@@ -1,23 +1,15 @@
 iframe {
-  border:0
-}
-
-a,button {
-  color:#007aff;
-  text-decoration:none
+  border:none;
 }
 
 html {
   background: white;
 }
 
-html .depiction {
-  background:0 0
-}
-
 body {
   font:18px -apple-system-font,".Helvetica NeueUI","Helvetica Neue",sans-serif;
-  margin:80px 0 35px
+  margin:25px 0 35px;
+  user-select: none;
 }
 
 .cydia body {
@@ -26,7 +18,7 @@ body {
 
 .depiction body {
   margin-top:0;
-  margin-bottom:0
+  margin-bottom:0;
 }
 
 @media (min-width:708px) {
@@ -200,18 +192,18 @@ code {
 header .date {
   float:right;
   margin-top:0;
-  margin-bottom:0
+  margin-bottom:0;
 }
 
 @media (min-width:708px) {
 header .date {
   margin-left:0;
-  margin-right:0
+  margin-right:0;
 }
 }
 
 footer :first-child {
-  margin-top:0
+  margin-top:0;
   color: white;
 }
 
@@ -245,16 +237,6 @@ footer :last-child {
 }
 }
 
-#in-this-version {
-  color: black;
-  font-size: 20px;
-}
-
-#known-issues {
-  color: black;
-  font-size: 20px;
-}
-
 #screenshots {
   color:black;
   font-size: 20px;
@@ -271,25 +253,29 @@ footer :last-child {
   -webkit-user-drag: none;
 }
 
-#about {
-  color:black;
-  font-size: 20px;
-  text-align: center;
-}
-
-#compatibility {
-  color:black;
-  font-size: 20px;
-  text-align: center;
-}
-
-#compatibility ul,li,h2{
+.fav {
   color:black;
   text-align: center;
   border-top: 0;
   border-bottom:0;
-  outline: none;
-  outline: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
+}
+
+.name{
+  text-align: center;
+  font-size: 30px;
+}
+
+.avatar{
+  height: 450px;
+  margin: 10px ;
+}
+
+.desc{
+  color: black;
+}
+
+.card{
+  min-height: 400px;
+  width: 100%;
+  background-color: white;
 }

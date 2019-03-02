@@ -237,16 +237,6 @@ footer :last-child {
 }
 }
 
-#in-this-version {
-  color: black;
-  font-size: 20px;
-}
-
-#known-issues {
-  color: black;
-  font-size: 20px;
-}
-
 #screenshots {
   color:black;
   font-size: 20px;
@@ -272,6 +262,7 @@ footer :last-child {
 
 .name{
   text-align: center;
+  font-size: 30px;
 }
 
 .avatar{
@@ -287,84 +278,4 @@ footer :last-child {
   min-height: 400px;
   width: 100%;
   background-color: white;
-}
-
-
-
-.social-icons {
-
-text-align: center;
-
-position: relative;
-
-right: 10px;
-
-background-color: transparent;
-
-box-shadow: none;
-
-outline: none;
-text-decoration: none;
-display: block;
-
-}
-
-.social-icons li,a {
-
-display:inline-block;
-
-list-style-type:none;
-
--webkit-user-select:none;
-
--moz-user-select:none;
-
-cursor: pointer;
-
-background-color: transparent;
-
-box-shadow: none;
-text-decoration: none;
-
-
-}
-
-.social-icons li a {
-
-border-bottom: none;
-
-cursor: pointer;
-
--webkit-user-drag: none;
-text-decoration: none;
-display:block;
-
-
-}
-
-.social-icons li img {
-
-width:60px;
-
-height:60px;
-
-margin-right: 20px;
-
-text-decoration: none;
-
-border-radius: 30px;
-
-outline: none;
-
-border: none;
-
-cursor: pointer;
-
--webkit-user-drag: none;
-
-background: transparent;
-
-box-shadow: none;
-display:block;
-
 }

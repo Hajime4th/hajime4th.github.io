@@ -12,7 +12,7 @@ Size: 34316
 MD5sum: 516687183212b71897c57917f98c1c3c
 SHA1:  6eea34e5b51a4897e4f3572bdef4a4d00d86f152
 SHA256: 323309efb81767147d3924b4d333b1d3e766175655bb6913c00bed59d6204baa
-Icon: https://github.com/Hajime4th/hajime4th.github.io/blob/master/img/ad.png
+Icon: file:///Library/Themes/Arizon.theme/Bundles/icon.png
 Depiction: https://hajime4th.github.io/depic/Arizon/index.html
 
 Package: com.hajime.royal
@@ -20,7 +20,6 @@ Name: Royal
 Version: 1.0
 Architecture: iphoneos-arm
 Description: A lovely dark theme created with love by Hajime.
-Changelog: Added Unc0ver icon.
 Maintainer: Hajime <hajime4th@gmail.com>
 Author: Hajime <hajime4th@gmail.com>
 Section: Themes
@@ -31,4 +30,4 @@ MD5sum: a7946f66db6dd5dbc0fcdebc6d21d447
 SHA1:  1ba48eef3121394fe46be69d0c903be36b88d47f
 SHA256: c2bb1df175527fb8675c17fae7791b194d8fae505a7f5435a6f800d9809c9730
 Icon: file:///Library/Themes/Royal%20Apps.theme/Bundles/icon.png
-Depiction: depic/Royal/index.html
+Depiction: https://hajime4th.github.io/depic/Royal/index.html
