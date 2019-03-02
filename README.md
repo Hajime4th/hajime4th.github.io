@@ -1,2 +1,1 @@
-# hajime4th.github.io
-Hajime Repo
+# If you use something from my code please credit me, thanks!
