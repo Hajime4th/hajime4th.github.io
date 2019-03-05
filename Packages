@@ -17,17 +17,17 @@ Depiction: https://hajime4th.github.io/depic/Arizon/index.html
 
 Package: com.hajime.royal
 Name: Royal
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: A lovely dark theme created with love by Hajime.
 Maintainer: Hajime <hajime4th@gmail.com>
 Author: Hajime <hajime4th@gmail.com>
 Section: Themes
 Depends: com.anemonetheming.anemone
-Filename: debs/com.hajime.royal_1.0_iphoneos-arm.deb
-Size: 313772
-MD5sum: a7946f66db6dd5dbc0fcdebc6d21d447
-SHA1:  1ba48eef3121394fe46be69d0c903be36b88d47f
-SHA256: c2bb1df175527fb8675c17fae7791b194d8fae505a7f5435a6f800d9809c9730
+Filename: debs/com.hajime.royal_1.1_iphoneos-arm.deb
+Size: 577340
+MD5sum: de46e4ad64740da4b9de207670d3b8a5
+SHA1:  dc0dfa870996226a1b25266196ff9136ea9a0cb3
+SHA256: 49bfdf1e28c4baaa77d563e38fa4d4c745b3f7f5e71798bbc7742b25dea0589c
 Icon: file:///Library/Themes/Royal%20Apps.theme/Bundles/icon.png
 Depiction: https://hajime4th.github.io/depic/Royal/index.html
