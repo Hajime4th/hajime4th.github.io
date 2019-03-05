@@ -26,8 +26,8 @@ Section: Themes
 Depends: com.anemonetheming.anemone
 Filename: debs/com.hajime.royal_1.1_iphoneos-arm.deb
 Size: 577340
-MD5sum: de46e4ad64740da4b9de207670d3b8a5
-SHA1:  dc0dfa870996226a1b25266196ff9136ea9a0cb3
-SHA256: 49bfdf1e28c4baaa77d563e38fa4d4c745b3f7f5e71798bbc7742b25dea0589c
+MD5sum: 0714bd7448c53582ba4a71873fa51392
+SHA1:  45f7c8dc12d0477cb8a141bacf043387f1ee59e7
+SHA256: fb91500d48f6df1184398232439eff1e231897d04e834d3412f4ca75bc44e82c
 Icon: file:///Library/Themes/Royal%20Apps.theme/Bundles/icon.png
 Depiction: https://hajime4th.github.io/depic/Royal/index.html
