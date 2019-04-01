@@ -23,7 +23,7 @@ Description: A lovely dark theme created with love by Hajime.
 Maintainer: Hajime <hajime4th@gmail.com>
 Author: Hajime <hajime4th@gmail.com>
 Section: Themes
-Depends: com.spark.snowboardapplication
+Depends: com.anemonetheming.anemone
 Filename: debs/com.hajime.royal_1.1_iphoneos-arm.deb
 Size: 577340
 MD5sum: 0714bd7448c53582ba4a71873fa51392
