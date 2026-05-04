@@ -84,19 +84,21 @@ window.addEventListener('scroll', checkStats, { passive: true });
 checkStats();
 
 /* ─── Gallery filter ─────────────────────────── */
+let filterGeneration = 0;
+
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
+        const gen = ++filterGeneration;
         const filter = btn.dataset.filter;
         document.querySelectorAll('.gallery-item').forEach(item => {
             const show = filter === 'all' || item.dataset.category === filter;
             if (show) {
                 item.style.removeProperty('display');
-                // Double rAF to allow browser to re-paint display before opacity
                 requestAnimationFrame(() => requestAnimationFrame(() => {
-                    item.classList.remove('hidden');
+                    if (gen === filterGeneration) item.classList.remove('hidden');
                 }));
             } else {
                 item.classList.add('hidden');
