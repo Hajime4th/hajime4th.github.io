@@ -1,39 +1,311 @@
 <!DOCTYPE html>
-<html >
-  <head>
+<html lang="nl">
+<head>
     <meta charset="UTF-8">
-    <title>Hajime</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmbientDrive | Premium Auto Customization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Startup Loader -->
+    <div class="startup-overlay" id="loader">
+        <img src="logo.png" alt="AmbientDrive" class="loader-logo">
+    </div>
 
+    <!-- Floating Buttons (WhatsApp + Instagram) -->
+    <div class="fab-container">
+        <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20AmbientDrive!" 
+           class="whatsapp-fab" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
 
-        <link rel="stylesheet" href="css/style.css">
+        <a href="https://www.instagram.com/ambientdrive.nl" target="_blank" rel="noopener" class="instagram-fab" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.849.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.667.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.76 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+        </a>
+    </div>
 
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img src="logo.png" alt="AmbientDrive" class="nav-logo">
+            </a>
+            <div class="nav-menu">
+                <a href="#diensten" class="menu-item">Diensten</a>
+                <a href="#galerij" class="menu-item">Galerij</a>
+                <a href="#offerte" class="btn-nav">Offerte Aanvragen</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <a href="#diensten" class="mobile-item">Diensten</a>
+            <a href="#galerij" class="mobile-item">Galerij</a>
+            <a href="#offerte" class="mobile-item mobile-cta">Offerte Aanvragen</a>
+        </div>
+    </nav>
 
+    <main id="main-content">
 
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-content reveal">
+                <span class="badge">⚡ Eersteklas Entertainment</span>
+                <h1>
+                    <span class="h1-line1">Jouw auto.</span>
+                    <span class="h1-line2"><span class="word-verbeterd">Verbeterd.</span></span>
+                </h1>
+                <p class="hero-sub">Wij brengen high-end technologie naar het interieur van jouw auto. Professioneel geïnstalleerd, altijd op maat.</p>
+                <div class="hero-actions">
+                    <a href="#offerte" class="btn-main">Direct Aanvragen</a>
+                    <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20AmbientDrive!" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp ons</a>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
 
-  </head>
+        <!-- Stats Strip -->
+        <section class="stats-strip reveal">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">🔧</div>
+                    <span class="stat-number" data-target="500" data-suffix="+">500+</span>
+                    <span class="stat-label">Installaties</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <span class="stat-number">5.0</span>
+                    <span class="stat-label">Gemiddelde score</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <span class="stat-number" data-target="24" data-suffix="u">24u</span>
+                    <span class="stat-label">Reactietijd</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛡️</div>
+                    <span class="stat-number">3 jaar</span>
+                    <span class="stat-label">Garantie</span>
+                </div>
+            </div>
+        </section>
 
-  <body>
+        <!-- Diensten -->
+        <section id="diensten" class="services reveal">
+            <div class="section-header">
+                <span class="badge">Wat wij doen</span>
+                <h2 class="section-title">Onze Diensten</h2>
+                <p class="section-sub">Professionele upgrades voor elk type voertuig</p>
+            </div>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Ambient Light</h3>
+                    <p>Luxe sfeerverlichting in 64 kleuren, naadloos weggewerkt in de binnenbekleding van uw auto.</p>
+                    <ul class="card-features">
+                        <li>64+ kleuropties</li>
+                        <li>App-besturing</li>
+                        <li>Muziek-sync</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>CarPlay Upgrade</h3>
+                    <p>Draadloze smartphone integratie voor Apple CarPlay en Android Auto zonder kabels.</p>
+                    <ul class="card-features">
+                        <li>Apple & Android</li>
+                        <li>Volledig draadloos</li>
+                        <li>HD touchscreen</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎥</div>
+                    <h3>Camera Systemen</h3>
+                    <p>HD parkeerhulp en 360-graden systemen voor maximale veiligheid en comfort.</p>
+                    <ul class="card-features">
+                        <li>360° rondom</li>
+                        <li>Nachtzicht HD</li>
+                        <li>Inbouw garantie</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <body class="depiction">
-  <header>
-    <h1>Hajime</h1>
-  </header>
-  <main id="content" role="main">
-    <ul>
-      <li>
-      <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://hajime4th.github.io/">Add to Cydia</a>
-      </li>
-    </ul>
-    <p class="footer">Report issues to /u/hajime4th.</p>
-  </main>
+        <!-- Galerij -->
+        <section id="galerij" class="gallery-section reveal">
+            <div class="section-header">
+                <span class="badge">Ons Werk</span>
+                <h2 class="section-title">Galerij</h2>
+                <p class="section-sub">Bekijk onze installaties — klik voor een grotere weergave</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Alles</button>
+                <button class="filter-btn" data-filter="ambient">Ambient Light</button>
+                <button class="filter-btn" data-filter="carplay">CarPlay</button>
+                <button class="filter-btn" data-filter="camera">Camera</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Ambient Light -->
+                <div class="gallery-item" data-category="ambient">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1618843479313-40f8e9c7f2f0?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Ambient Light</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">BMW 5-serie — 64-kleur ambient systeem</p>
+                </div>
+                <div class="gallery-item gallery-wide" data-category="ambient">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Ambient Light</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Audi A6 — Volledige interieur verlichting</p>
+                </div>
+                <div class="gallery-item" data-category="ambient">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1558618047-3c8c76b7a9a5?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Ambient Light</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Mercedes C-klasse — Paars sfeer pakket</p>
+                </div>
+
+                <!-- CarPlay -->
+                <div class="gallery-item gallery-tall" data-category="carplay">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">CarPlay</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">VW Golf — Draadloos CarPlay upgrade</p>
+                </div>
+                <div class="gallery-item" data-category="carplay">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">CarPlay</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Toyota Camry — 10&quot; touchscreen installatie</p>
+                </div>
+                <div class="gallery-item" data-category="carplay">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">CarPlay</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Ford Focus — Android Auto upgrade</p>
+                </div>
+
+                <!-- Camera -->
+                <div class="gallery-item gallery-wide" data-category="camera">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=1200&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Camera</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Skoda Octavia — 360° rondom systeem</p>
+                </div>
+                <div class="gallery-item" data-category="camera">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Camera</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Seat Leon — HD achteruitrijcamera</p>
+                </div>
+                <div class="gallery-item" data-category="camera">
+                    <div class="gallery-img" style="background-image:url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=800&q=80')">
+                        <div class="gallery-overlay"><span class="gallery-tag">Camera</span><span class="gallery-expand">↗</span></div>
+                    </div>
+                    <p class="gallery-caption">Opel Astra — Nachtzicht parkeercamera</p>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <p>Wil jij jouw auto ook upgraden?</p>
+                <a href="https://wa.me/31612345678?text=Ik%20heb%20jullie%20galerij%20gezien%20en%20wil%20graag%20een%20offerte!" class="btn-whatsapp" target="_blank" rel="noopener">Stuur ons een bericht</a>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerij weergave">
+            <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+            <button class="lightbox-close" id="lightboxClose" aria-label="Sluiten">✕</button>
+            <div class="lightbox-content">
+                <div class="lightbox-img" id="lightboxImg"></div>
+                <p class="lightbox-caption" id="lightboxCaption"></p>
+            </div>
+        </div>
+
+        <!-- Offerte -->
+        <section id="offerte" class="contact-section reveal">
+            <div class="container">
+                <div class="form-card">
+                    <div class="form-header">
+                        <span class="badge-purple">✉️ Snel & Eenvoudig</span>
+                        <h2 class="form-title">Vraag een <span class="purple-text">Offerte</span> aan</h2>
+                        <p>Binnen 24 uur een voorstel op maat. Of stuur ons direct een WhatsApp bericht.</p>
+                        <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen!" class="btn-whatsapp whatsapp-inline" target="_blank" rel="noopener">Direct via WhatsApp</a>
+                    </div>
+                    <div class="form-divider"><span>of vul het formulier in</span></div>
+                    <form action="https://formspree.io/f/xdabaqza" method="POST" id="contactForm">
+                        <input type="hidden" name="_subject" value="Nieuwe offerte-aanvraag via AmbientDrive">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="name">Naam *</label>
+                                <input type="text" id="name" name="name" placeholder="Je naam" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.nl" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Telefoon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="06 12345678">
+                            </div>
+                            <div class="input-group">
+                                <label for="car">Auto *</label>
+                                <input type="text" id="car" name="car" placeholder="Bijv. BMW 3-serie 2021" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="service">Gewenste dienst *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Selecteer upgrade...</option>
+                                <option value="Ambient Lighting">💡 Ambient Lighting</option>
+                                <option value="CarPlay Upgrade">📱 CarPlay Upgrade</option>
+                                <option value="Camera Systemen">🎥 Camera Systemen</option>
+                                <option value="Combinatie pakket">⚡ Combinatie pakket</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Bericht</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Vertel ons meer over uw wensen..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-text">Verstuur Aanvraag</span>
+                            <span class="btn-loading" style="display:none">Versturen...</span>
+                        </button>
+                        <p class="form-disclaimer">Wij respecteren uw privacy. Geen spam, ooit.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <img src="logo.png" alt="AmbientDrive Logo" class="footer-logo">
+        <div class="footer-links">
+            <a href="#diensten">Diensten</a>
+            <a href="#galerij">Galerij</a>
+            <a href="#offerte">Offerte</a>
+            <a href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.instagram.com/ambientdrive.nl" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p>&copy; 2026 AmbientDrive. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-        <script src="js/index.js"></script>
-
-
-
-
-  </body>
 </html>
